@@ -1,0 +1,52 @@
+$total-columns: 12 !default;
+
+@mixin relative {
+	position: relative;
+}
+
+.row {
+	max-width: 60em;
+	margin: 0 auto;
+	
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+	.columns {
+		float: left;
+		width: 100%;
+		padding-left: 0.9375em;
+		padding-right: 0.9375em;
+	}
+}
+
+
+@function gridCalc($columnNumber, $totalColumns) {
+	@return percentage($columnNumber / $totalColumns); 
+}
+
+@media only screen and (min-width: 320px) {
+
+	@for $i from 1 through $total-columns {
+		.row  .small#{-$i} {
+			@include relative;
+			width: gridCalc($i, $total-columns)
+		}
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	@for $i from 1 through $total-columns {
+		.row  .large#{-$i} {
+			@include relative;
+			width: gridCalc($i, $total-columns)
+		}
+	}
+
+}
+

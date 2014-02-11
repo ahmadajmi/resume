@@ -1,0 +1,242 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #694949;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Default Link Styles */
+
+a {
+    color: $main-color;
+    text-decoration: none;
+    line-height: inherit;
+}
+
+a:hover,
+a:focus {
+    color: #2795b6;
+}
+
+a img {   
+    border: none;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+ ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+ audio,
+ canvas,
+ img,
+ video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+ fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+ textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    font-size: 100%;
+    line-height: 1.5;
+    color: $dark-color;
+    font-family: 'Raleway',Helvetica, Arial, 'sans serif';
+    background-color: $background-color;
+}
+
+.hero {
+    position: relative;
+    height: 100%;
+    background-color: $main-color;
+
+    .fa-angle-down {
+        position: absolute;
+        bottom: 3em;
+        font-size: 1.5em;
+        left: 50%;
+        color: #fff;
+    }
+}
+
+.photo {
+    margin-bottom: 3em;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 0 3px $background-color;
+    box-shadow: 0 0 0 3px $background-color ;
+}
+
+.hero__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.hero h2,
+.hero p {
+    color: #fff;
+}
+
+.intro {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: $dark-color;
+}
+
+.section {
+
+    padding: 5em 0;
+
+    &:nth-child(odd) {
+        background-color: $subtle-bg;
+    }
+
+}
+
+.list {
+    padding: 0;
+}
+
+.list li {
+    margin-bottom: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 1.5em;
+    position: relative;
+
+    &:before,
+    &:after {
+        position: absolute;
+        top: 50%;
+        margin-top: -5px;
+        height: 2px;
+        background-color: $main-color;
+        content: " ";        
+    }
+}
+
+.list li:before {
+    left: 0;
+    width: 12px;
+    @include rotate(134);
+}
+
+.list li:after {
+    left: -2px;
+    width: 7px;
+    @include rotate(-105);
+}
+
+/*  Site Footer */
+
+.site-footer {
+    color: #FFFFFF;
+    background-color: $dark-color;    
+
+    a {
+        color: #FFFFFF;
+    }
+}
+
+.social-links {
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.social-link {
+    color: #FFFFFF;
+    font-size: 1.5em;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.social-link:hover {
+    color: $main-color;
+}
+
+.social-links-goodreads {
+    position: relative;
+    top: -2px;
+    text-decoration: none;
+    font-style: italic;
+    font-family:helvetica;
+}

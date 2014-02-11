@@ -1,0 +1,135 @@
+/* Default header styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-style: normal;
+    color: #34495E;
+    text-rendering: optimizeLegibility;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    line-height: 1.2125em;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+    font-size: 60%;
+    color: #6f6f6f;
+    line-height: 0;
+}
+
+h1 {
+    font-size: 2.125em;
+}
+
+h2 {
+    font-size: 1.6875em;
+}
+
+h3 {
+    font-size: 1.375em;
+}
+
+h4 {
+    font-size: 1.125em;
+}
+
+h5 {
+    font-size: 1.125em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+hr {
+    border: solid #dddddd;
+    border-width: 1px 0 0;
+    clear: both;
+    margin: 1.25em 0 1.1875em;
+    height: 0;
+}
+
+/* Helpful Typography Defaults */
+
+em,
+i {
+    font-style: italic;
+    line-height: inherit;
+}
+
+strong,
+b {
+    font-weight: bold;
+    line-height: inherit;
+}
+
+small {
+    font-size: 80%;
+    line-height: inherit;
+}
+
+code {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    font-weight: bold;
+    color: #7f0a0c;
+}
+
+/* Lists */
+
+ul,
+ol,
+dl {
+    font-size: 1em;
+    line-height: 1.6;
+    list-style-position: outside;
+    font-family: inherit;
+}
+
+/* Unordered Lists */
+
+ul li ul,
+ul li ol {
+    margin-left: 1.25em;
+    margin-bottom: 0;
+    font-size: 1em;
+    /* Override nested font-size change */
+}
+
+ul.square li ul,
+ul.circle li ul,
+ul.disc li ul { 
+    list-style: inherit;
+}
+
+ul.square {
+    list-style-type: square;
+}
+
+ul.circle {
+    list-style-type: circle;
+}
+
+ul.disc {
+    list-style-type: disc;
+}
+
+ul.no-bullet {
+    list-style: none;
+}
+
+/* Ordered Lists */
+
+ol li ul,
+ol li ol {
+    margin-left: 1.25em;
+    margin-bottom: 0;
+}
