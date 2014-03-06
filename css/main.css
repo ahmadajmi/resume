@@ -400,6 +400,7 @@ ol li ol {
     display: table;
     clear: both; }
   .row .columns {
+    position: relative;
     float: left;
     width: 100%;
     padding-left: 0.9375em;
@@ -407,99 +408,75 @@ ol li ol {
 
 @media only screen and (min-width: 320px) {
   .row .small-1 {
-    position: relative;
     width: 8.33333%; }
 
   .row .small-2 {
-    position: relative;
     width: 16.66667%; }
 
   .row .small-3 {
-    position: relative;
     width: 25%; }
 
   .row .small-4 {
-    position: relative;
     width: 33.33333%; }
 
   .row .small-5 {
-    position: relative;
     width: 41.66667%; }
 
   .row .small-6 {
-    position: relative;
     width: 50%; }
 
   .row .small-7 {
-    position: relative;
     width: 58.33333%; }
 
   .row .small-8 {
-    position: relative;
     width: 66.66667%; }
 
   .row .small-9 {
-    position: relative;
     width: 75%; }
 
   .row .small-10 {
-    position: relative;
     width: 83.33333%; }
 
   .row .small-11 {
-    position: relative;
     width: 91.66667%; }
 
   .row .small-12 {
-    position: relative;
     width: 100%; } }
 @media only screen and (min-width: 768px) {
   .row .large-1 {
-    position: relative;
     width: 8.33333%; }
 
   .row .large-2 {
-    position: relative;
     width: 16.66667%; }
 
   .row .large-3 {
-    position: relative;
     width: 25%; }
 
   .row .large-4 {
-    position: relative;
     width: 33.33333%; }
 
   .row .large-5 {
-    position: relative;
     width: 41.66667%; }
 
   .row .large-6 {
-    position: relative;
     width: 50%; }
 
   .row .large-7 {
-    position: relative;
     width: 58.33333%; }
 
   .row .large-8 {
-    position: relative;
     width: 66.66667%; }
 
   .row .large-9 {
-    position: relative;
     width: 75%; }
 
   .row .large-10 {
-    position: relative;
     width: 83.33333%; }
 
   .row .large-11 {
-    position: relative;
     width: 91.66667%; }
 
   .row .large-12 {
-    position: relative;
     width: 100%; } }
 *,
 *:before,

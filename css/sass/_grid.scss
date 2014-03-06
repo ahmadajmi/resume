@@ -1,8 +1,5 @@
+// Out total columns
 $total-columns: 12 !default;
-
-@mixin relative {
-	position: relative;
-}
 
 .row {
 	max-width: 60em;
@@ -16,6 +13,7 @@ $total-columns: 12 !default;
 	}
 
 	.columns {
+		position: relative;
 		float: left;
 		width: 100%;
 		padding-left: 0.9375em;
@@ -32,7 +30,6 @@ $total-columns: 12 !default;
 
 	@for $i from 1 through $total-columns {
 		.row  .small#{-$i} {
-			@include relative;
 			width: gridCalc($i, $total-columns)
 		}
 	}
@@ -43,10 +40,8 @@ $total-columns: 12 !default;
 
 	@for $i from 1 through $total-columns {
 		.row  .large#{-$i} {
-			@include relative;
 			width: gridCalc($i, $total-columns)
 		}
 	}
 
 }
-
