@@ -22,7 +22,7 @@ html {
 /* Default Link Styles */
 
 a {
-    color: $main-color;
+    color: $anchor-link-color;
     text-decoration: none;
     line-height: inherit;
 }
@@ -106,7 +106,7 @@ body {
     font-size: 100%;
     line-height: 1.5;
     color: $dark-color;
-    font-family: 'Raleway',Helvetica, Arial, 'sans serif';
+    font-family: 'Open Sans',Montserrat, 'Raleway',Helvetica, Arial, 'sans serif';
     background-color: $background-color;
 }
 
@@ -124,14 +124,6 @@ body {
     }
 }
 
-.photo {
-    margin-bottom: 3em;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-box-shadow: 0 0 0 3px $background-color;
-    box-shadow: 0 0 0 3px $background-color ;
-}
-
 .hero__inner {
     position: absolute;
     top: 50%;
@@ -141,15 +133,24 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.hero h2 {
+.hero__title {
     margin: 0;
     font-size: 2em;
     font-weight: 300;
+    font-family: Montserrat;
 }
 
-.hero h2,
-.hero p {
+.hero__title,
+.hero__intro {
     color: #fff;
+}
+
+.hero__photo {
+    margin-bottom: 3em;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 0 3px $background-color;
+    box-shadow: 0 0 0 3px $background-color ;
 }
 
 .intro {
@@ -184,7 +185,7 @@ body {
         top: 50%;
         margin-top: -5px;
         height: 2px;
-        background-color: $main-color;
+        background-color: $anchor-link-color;
         content: " ";        
     }
 }
@@ -203,19 +204,8 @@ body {
 
 /*  Site Footer */
 
-.site-footer {
-    color: #FFFFFF;
-    background-color: $dark-color;    
-
-    a {
-        color: #FFFFFF;
-    }
-}
-
 .social-links {
     margin-top: 3em;
-    margin-bottom: 3em;
-
     ul {
         padding: 0;
         margin: 0;
@@ -223,14 +213,9 @@ body {
 }
 
 .social-link {
-    color: #FFFFFF;
     font-size: 1.5em;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-}
-
-.social-link:hover {
-    color: $main-color;
 }
 
 .social-links-goodreads {

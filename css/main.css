@@ -1,4 +1,4 @@
-/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+/* normalize.css v2.1.0 | MIT License | git.io/normalize */
 article,
 aside,
 details,
@@ -498,7 +498,7 @@ html {
 
 /* Default Link Styles */
 a {
-  color: #82bac6;
+  color: #16a085;
   text-decoration: none;
   line-height: inherit; }
 
@@ -566,8 +566,8 @@ body {
   min-height: 100%;
   font-size: 100%;
   line-height: 1.5;
-  color: #2e3b4e;
-  font-family: 'Raleway',Helvetica, Arial, 'sans serif';
+  color: #043d5d;
+  font-family: 'Open Sans',Montserrat, 'Raleway',Helvetica, Arial, 'sans serif';
   background-color: #ecf0f1; }
 
 .hero {
@@ -581,13 +581,6 @@ body {
     left: 50%;
     color: #fff; }
 
-.photo {
-  margin-bottom: 3em;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 3px #ecf0f1;
-  box-shadow: 0 0 0 3px #ecf0f1; }
-
 .hero__inner {
   position: absolute;
   top: 50%;
@@ -596,19 +589,27 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-.hero h2 {
+.hero__title {
   margin: 0;
   font-size: 2em;
-  font-weight: 300; }
+  font-weight: 300;
+  font-family: Montserrat; }
 
-.hero h2,
-.hero p {
+.hero__title,
+.hero__intro {
   color: #fff; }
+
+.hero__photo {
+  margin-bottom: 3em;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 3px #ecf0f1;
+  box-shadow: 0 0 0 3px #ecf0f1; }
 
 .intro {
   font-size: 1.5em;
   font-weight: 300;
-  color: #2e3b4e; }
+  color: #043d5d; }
 
 .section {
   padding: 5em 0; }
@@ -628,7 +629,7 @@ body {
     top: 50%;
     margin-top: -5px;
     height: 2px;
-    background-color: #82bac6;
+    background-color: #16a085;
     content: " "; }
 
 .list li:before {
@@ -646,27 +647,16 @@ body {
   transform: rotate(-105deg); }
 
 /*  Site Footer */
-.site-footer {
-  color: #FFFFFF;
-  background-color: #2e3b4e; }
-  .site-footer a {
-    color: #FFFFFF; }
-
 .social-links {
-  margin-top: 3em;
-  margin-bottom: 3em; }
+  margin-top: 3em; }
   .social-links ul {
     padding: 0;
     margin: 0; }
 
 .social-link {
-  color: #FFFFFF;
   font-size: 1.5em;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
-
-.social-link:hover {
-  color: #82bac6; }
 
 .social-links-goodreads {
   position: relative;
