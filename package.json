@@ -1,14 +1,14 @@
 {
-    "name" : "ahmad-resume",
-    "version" : "0.1.0",
-    "author" : "Ahmad Ajmi",
-    "private" : true,
+  "name" : "ahmad-resume",
+  "version" : "0.1.0",
+  "author" : "Ahmad Ajmi",
+  "private" : true,
 
-    "devDependencies" : {
-        "grunt" :                       "~0.4.0",
-        "grunt-contrib-cssmin":         "*",
-        "grunt-contrib-sass":           "*",
-        "grunt-contrib-watch":          "*",
-        "matchdep":                     "*"
-    } 
+  "devDependencies" : {
+    "grunt" :                       "~0.4.0",
+    "grunt-contrib-cssmin":         "*",
+    "grunt-contrib-sass":           "*",
+    "grunt-contrib-watch":          "*",
+    "matchdep":                     "*"
+  }
 }

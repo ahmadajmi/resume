@@ -1,227 +1,195 @@
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+//
+// We set height to 100% so that
+// we can set the hero section to fill the whole screen
 
 html,
-button,
-input,
-select,
-textarea {
-    color: #694949;
+body {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+  color: $dark-color;
+  font-family: 'Open Sans',Montserrat, 'Raleway',Helvetica, Arial, 'sans serif';
+  background-color: $background-color;
 }
 
-html {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-/* Default Link Styles */
+//
+//  Default Link Styles
 
 a {
-    color: $anchor-link-color;
-    text-decoration: none;
-    line-height: inherit;
+  color: $anchor-link-color;
+  text-decoration: none;
+  line-height: inherit;
 }
 
 a:hover,
 a:focus {
-    color: #2795b6;
+  color: #2795b6;
 }
 
-a img {   
-    border: none;
+//
+// Other general rules
+
+img {
+  height: quto;
+  max-width: 100%;
 }
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
+.no-bullets { list-style: none; }
 
- ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+.hidden {
+    display: none !important;
+    visibility: hidden;
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
- hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+.clearfix:after {
+    clear: both;
 }
 
-/*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
- */
-
- audio,
- canvas,
- img,
- video {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
- fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
- textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Sections
-   ========================================================================== */
-
-html,
-body {
-    height: 100%;
-    min-height: 100%;
-    font-size: 100%;
-    line-height: 1.5;
-    color: $dark-color;
-    font-family: 'Open Sans',Montserrat, 'Raleway',Helvetica, Arial, 'sans serif';
-    background-color: $background-color;
-}
+//
+// Top Sectoin
+//
 
 .hero {
-    position: relative;
-    height: 100%;
-    background-color: $main-color;
+  position: relative;
+  height: 100%;
+  background-color: $main-color;
 
-    .fa-angle-down {
-        position: absolute;
-        bottom: 3em;
-        font-size: 1.5em;
-        left: 50%;
-        color: #fff;
-    }
+  .fa-angle-down {
+    position: absolute;
+    bottom: 3em;
+    left: 50%;
+    color: #fff;
+    font-size: 1.5em;
+  }
 }
 
+//
+// Position the content vertically and horizintally
+
 .hero__inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .hero__title {
-    margin: 0;
-    font-size: 2em;
-    font-weight: 300;
-    font-family: Montserrat;
+  margin: 0;
+  font-size: 2em;
+  font-weight: 300;
+  font-family: Montserrat;
 }
 
 .hero__title,
 .hero__intro {
-    color: #fff;
+  color: #fff;
 }
 
 .hero__photo {
-    margin-bottom: 3em;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-box-shadow: 0 0 0 3px $background-color;
-    box-shadow: 0 0 0 3px $background-color ;
+  margin-bottom: 3em;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 3px $background-color;
+  box-shadow: 0 0 0 3px $background-color;
 }
 
+//
+// Sections
+//
+
 .intro {
-    font-size: 1.5em;
-    font-weight: 300;
-    color: $dark-color;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: $dark-color;
 }
 
 .section {
+  padding: 5em 0;
 
-    padding: 5em 0;
-
-    &:nth-child(odd) {
-        background-color: $subtle-bg;
-    }
-
+  &:nth-child(odd) {
+    background-color: $subtle-bg;
+  }
 }
 
 .list {
-    padding: 0;
+  padding: 0;
 }
 
 .list li {
-    margin-bottom: 0.4em;
-    padding-bottom: 0.4em;
-    padding-left: 1.5em;
-    position: relative;
+  margin-bottom: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 1.5em;
+  position: relative;
 
-    &:before,
-    &:after {
-        position: absolute;
-        top: 50%;
-        margin-top: -5px;
-        height: 2px;
-        background-color: $anchor-link-color;
-        content: " ";        
-    }
+  &:before,
+  &:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    height: 2px;
+    background-color: $anchor-link-color;
+    content: " ";
+  }
 }
 
 .list li:before {
-    left: 0;
-    width: 12px;
-    @include rotate(134);
+  left: 0;
+  width: 12px;
+  -webkit-transform: rotate(134deg);
+      -ms-transform: rotate(134deg);
+          transform: rotate(134deg);
 }
 
 .list li:after {
-    left: -2px;
-    width: 7px;
-    @include rotate(-105);
+  left: -2px;
+  width: 7px;
+  -webkit-transform: rotate(-105deg);
+      -ms-transform: rotate(-105deg);
+          transform: rotate(-105deg);
 }
 
-/*  Site Footer */
+//
+//  Site Footer
+//
 
 .social-links {
-    margin-top: 3em;
-    ul {
-        padding: 0;
-        margin: 0;
-    }
+  margin-top: 3em;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .social-link {
-    font-size: 1.5em;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+  font-size: 1.5em;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
+//
+// Custom style for the goodreads icon
+
 .social-links-goodreads {
-    position: relative;
-    top: -2px;
-    text-decoration: none;
-    font-style: italic;
-    font-family:helvetica;
+  position: relative;
+  top: -2px;
+  text-decoration: none;
+  font-style: italic;
+  font-family:helvetica;
 }

@@ -1,10 +1,13 @@
+//
 // Out total columns
+//
+
 $total-columns: 12 !default;
 
 .row {
 	max-width: 60em;
 	margin: 0 auto;
-	
+
 	&:before,
 	&:after {
 		content: " ";
@@ -23,7 +26,7 @@ $total-columns: 12 !default;
 
 
 @function gridCalc($columnNumber, $totalColumns) {
-	@return percentage($columnNumber / $totalColumns); 
+	@return percentage($columnNumber / $totalColumns);
 }
 
 @media only screen and (min-width: 320px) {
