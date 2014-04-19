@@ -397,13 +397,14 @@ img {
   display: none !important;
   visibility: hidden; }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
-
 .clearfix:after {
   clear: both; }
+
+.text-center {
+  text-align: center; }
 
 .hero {
   position: relative;

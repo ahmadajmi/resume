@@ -49,15 +49,14 @@ img {
     visibility: hidden;
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+.clearfix {
+  &:before,
+  &:after       { content: " "; display: table; }
+
+  &:after       { clear: both; }
 }
 
-.clearfix:after {
-    clear: both;
-}
+.text-center    { text-align: center; }
 
 //
 // Top Sectoin
