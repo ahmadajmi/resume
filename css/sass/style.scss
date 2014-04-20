@@ -45,8 +45,8 @@ img {
 .no-bullets { list-style: none; }
 
 .hidden {
-    display: none !important;
-    visibility: hidden;
+  display: none !important;
+  visibility: hidden;
 }
 
 .clearfix {
@@ -67,12 +67,16 @@ img {
   height: 100%;
   background-color: $main-color;
 
-  .fa-angle-down {
+  .to-bottom {
     position: absolute;
     bottom: 3em;
     left: 50%;
     color: #fff;
     font-size: 1.5em;
+  }
+
+  .fa-angle-down {
+
   }
 }
 
@@ -84,8 +88,8 @@ img {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .hero__title {
@@ -101,11 +105,13 @@ img {
 }
 
 .hero__photo {
+  width: 100px;
+  height: 100px;
   margin-bottom: 3em;
   -webkit-border-radius: 50%;
-  border-radius: 50%;
+          border-radius: 50%;
   -webkit-box-shadow: 0 0 0 3px $background-color;
-  box-shadow: 0 0 0 3px $background-color;
+          box-shadow: 0 0 0 3px $background-color;
 }
 
 //
@@ -179,7 +185,7 @@ img {
 .social-link {
   font-size: 1.5em;
   -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
 }
 
 //

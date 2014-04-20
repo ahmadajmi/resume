@@ -410,7 +410,7 @@ img {
   position: relative;
   height: 100%;
   background-color: #82bac6; }
-  .hero .fa-angle-down {
+  .hero .to-bottom {
     position: absolute;
     bottom: 3em;
     left: 50%;
@@ -436,6 +436,8 @@ img {
   color: #fff; }
 
 .hero__photo {
+  width: 100px;
+  height: 100px;
   margin-bottom: 3em;
   -webkit-border-radius: 50%;
   border-radius: 50%;
