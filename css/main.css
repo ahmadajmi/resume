@@ -1,4 +1,4 @@
-/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+/* normalize.css v2.1.0 | MIT License | git.io/normalize */
 article,
 aside,
 details,
@@ -414,8 +414,11 @@ img {
     position: absolute;
     bottom: 3em;
     left: 50%;
-    color: #fff;
-    font-size: 1.5em; }
+    width: 0;
+    text-indent: -9000px;
+    border-style: solid;
+    border-width: 8px 7px;
+    border-color: #fff transparent transparent; }
 
 .hero__inner {
   position: absolute;
@@ -427,9 +430,11 @@ img {
 
 .hero__title {
   margin: 0;
-  font-size: 2em;
-  font-weight: 300;
-  font-family: Montserrat; }
+  font-size: 1.5em; }
+  @media screen and (min-width: 600px) {
+    .hero__title {
+      font-size: 2em;
+      font-weight: 300; } }
 
 .hero__title,
 .hero__intro {
@@ -438,11 +443,14 @@ img {
 .hero__photo {
   width: 100px;
   height: 100px;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 0 3px #ecf0f1;
   box-shadow: 0 0 0 3px #ecf0f1; }
+  @media screen and (min-width: 600px) {
+    .hero__photo {
+      margin-bottom: 3em; } }
 
 .intro {
   font-size: 1.5em;
@@ -450,9 +458,12 @@ img {
   color: #043d5d; }
 
 .section {
-  padding: 5em 0; }
+  padding: 2em 0; }
   .section:nth-child(odd) {
     background-color: white; }
+  @media screen and (min-width: 600px) {
+    .section {
+      padding: 5em 0; } }
 
 .list {
   padding: 0; }
@@ -489,15 +500,3 @@ img {
   .social-links ul {
     padding: 0;
     margin: 0; }
-
-.social-link {
-  font-size: 1.5em;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
-
-.social-links-goodreads {
-  position: relative;
-  top: -2px;
-  text-decoration: none;
-  font-style: italic;
-  font-family: helvetica; }

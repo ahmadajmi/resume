@@ -71,9 +71,13 @@ img {
     position: absolute;
     bottom: 3em;
     left: 50%;
-    color: #fff;
-    font-size: 1.5em;
+    width: 0;
+    text-indent: -9000px;
+    border-style: solid;
+    border-width: 8px 7px;
+    border-color: #fff transparent transparent;
   }
+
 }
 
 //
@@ -90,9 +94,12 @@ img {
 
 .hero__title {
   margin: 0;
-  font-size: 2em;
-  font-weight: 300;
-  font-family: Montserrat;
+  font-size: 1.5em;
+
+  @media screen and (min-width: 600px) {
+    font-size: 2em;
+    font-weight: 300;
+  }
 }
 
 .hero__title,
@@ -103,11 +110,15 @@ img {
 .hero__photo {
   width: 100px;
   height: 100px;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   -webkit-box-shadow: 0 0 0 3px $background-color;
           box-shadow: 0 0 0 3px $background-color;
+
+  @media screen and (min-width: 600px) {
+    margin-bottom: 3em;
+  }
 }
 
 //
@@ -121,10 +132,14 @@ img {
 }
 
 .section {
-  padding: 5em 0;
+  padding: 2em 0;
 
   &:nth-child(odd) {
     background-color: $subtle-bg;
+  }
+
+  @media screen and (min-width: 600px) {
+    padding: 5em 0;
   }
 }
 
@@ -178,19 +193,3 @@ img {
   }
 }
 
-.social-link {
-  font-size: 1.5em;
-  -webkit-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out;
-}
-
-//
-// Custom style for the goodreads icon
-
-.social-links-goodreads {
-  position: relative;
-  top: -2px;
-  text-decoration: none;
-  font-style: italic;
-  font-family:helvetica;
-}
