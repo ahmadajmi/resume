@@ -1,0 +1,90 @@
+//
+// AJMI Grid System
+//
+
+
+$total-columns:           12 !default;
+$base-space-unit:        1em !default;
+$row-max-width:         60em !default;
+
+
+// gridCalc(1, 12) => 8.33333%
+
+@function gridCalc($columnNumber, $totalColumns) {
+  @return percentage($columnNumber / $totalColumns);
+}
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row {
+  margin: 0 auto;
+  max-width: $row-max-width;
+
+  &:before,
+  &:after {
+    display: table;
+    clear: both;
+    content: " ";
+  }
+
+  .row {
+    margin-right: -$base-space-unit;
+    margin-left:  -$base-space-unit;
+  }
+}
+
+.column {
+  position: relative;
+  float: left;
+  padding-right: $base-space-unit;
+  padding-left:  $base-space-unit;
+  width: 100%;
+}
+
+.column--center {
+  float: none;
+  margin: 0 auto;
+}
+
+// Small screens
+
+@media only screen {
+
+  @for $i from 1 through $total-columns {
+    .small#{-$i} {
+      width: gridCalc($i, $total-columns);
+    }
+  }
+
+}
+
+// Medium screens :: Larger than 640px
+
+@media only screen and (min-width: 40em) {
+
+  @for $i from 1 through $total-columns {
+    .medium#{-$i} {
+      width: gridCalc($i, $total-columns);
+    }
+  }
+
+}
+
+// Large screens :: Larger than 1024px
+
+@media only screen and (min-width: 64em) {
+
+  @for $i from 1 through $total-columns {
+    .large#{-$i} {
+      width: gridCalc($i, $total-columns);
+    }
+  }
+
+}

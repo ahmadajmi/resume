@@ -1,0 +1,75 @@
+//
+// http://joshnh.com/tools/em-baseline-generator.html
+//
+
+h1, .alpha,
+h2, .beta,
+h3, .gamma,
+h4, .delta,
+h5, .epsilon,
+h6, .zeta {
+    font-weight: 300;
+    margin: 0;
+}
+
+h1, .alpha {
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 0.5em;
+}
+
+h2, .beta {
+    font-size: 2.25em;
+    line-height: 1.3333333333333333;
+    margin-bottom: 0.6666666666666666em;
+}
+
+h3, .gamma {
+    font-size: 1.5em;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+h4, .delta {
+    font-size: 1.3125em;
+    line-height: 1.1428571428571428;
+    margin-bottom: 1.1428571428571428em;
+}
+
+h5, .epsilon {
+    font-size: 1.125em;
+    line-height: 1.3333333333333333;
+    margin-bottom: 1.3333333333333333em;
+}
+
+h6, .zeta {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+p,
+blockquote {
+    font-size: 1em;
+    margin: 0 0 1.5em;
+    line-height: 1.5;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+}
+
+dl,
+ol,
+ul {
+    font-size: 1em;
+    margin: 0 0 1.5em;
+    padding: 0;
+}
+
+dd,
+dt,
+li {
+    line-height: 1.5;
+    margin: 0;
+}

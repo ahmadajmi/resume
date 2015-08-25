@@ -1,0 +1,175 @@
+!!! 5
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %title Ahmad Ajmi | Resume
+    %meta{name: "description", content: "Ahmad Ajmi - Front-end Developer | Resume"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    %link{href: "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300", rel: "stylesheet", type: "text/css"}
+    %link{rel: "stylesheet", href: "styles/main.min.css"}
+    %link{href: "images/favicon.ico", rel: "shortcut icon"}
+  %head
+
+%body
+
+  .header.section.gray-bg.text-center
+    %h1 Ahmad Ajmi
+    %p.margin-bottom-none Front-end Developer
+
+  #content.section
+    .row
+      .large-12.column.text-center
+        %h2 A self-taught and entrepreneurial Front-end Developer
+        %h2.margin-bottom-none I love building products for people to use and enjoy everyday
+
+  .section
+    .row
+      .medium-6.large-6.column
+        .row
+          .medium-4.large-4.column
+            %h3.section-title Skills
+          .medium-8.large-8.column
+            %ul.list.bare-list
+              %li HTML5 & CSS3
+              %li Sass & HAML
+              %li Responsive Web Design
+              %li JavaScript
+              %li Ruby on Rails
+
+      .medium-6.large-6.column
+        .row
+          .medium-4.large-4.column
+            %h3.section-title I use
+          .medium-8.large-8.column
+            %ul.list.bare-list
+              %li MacBook Pro ♥
+              %li Firefox
+              %li Sublime
+              %li Git & Github
+              %li Trello
+
+  .section
+    .row
+      %header.large-12.column
+        %h3.section-title Personal Projects
+      .large-12.column
+        %p
+          %a{href: "http://oktob.io/", target: "_blank"} Oktob.io
+        %p
+          Blogging platform for the Arabic world designed for a better writing and reading experience.
+        %p
+          Oktob created to fix a personal problem which I spent the last 3 years blogging in Arabic and didn’t found any suitable and simple blogging platform that is simple in design and support Arabic very well, also created to fix the Arabic content problem everyone is talking about, we don’t have Arabic tools to create blogs and write content in a simple, fast and easy way, so Oktob is here to help everyone to create blogs and write great content.
+        %p
+          The social layer on top of Oktob such that people can follow each other with a timeline feed and also they can like and share content, this will absolutely help them reach a large network of readers and influence more people. Also people are allow to search and discover interesting content worth reading.
+        %p I created oktob with Ruby on Rails, HAML & Sass, ElasticSearch, dokku, AWS (S3-EC2) and deployed to DigitalOcean.
+
+      .large-12.column
+        %p
+          %a{href: "http://ontwik.com/", target: "_blank"} Ontwik
+        %p Ontwik makes it easy to share and find the best and latest conference Talks, Interviews for Developers & Designers and Creatives.
+
+        %p Ontwik was created to make track of the most recent conferences and collect them in one place so you don’t need to browse the whole web looking for a conference talk or watch a video about new technology.
+
+        %p Created ontwik with Ruby on Rails with HAML & Sass.
+
+  .section
+    .row
+      %header.large-12.column
+        %h3.section-title Open Source
+
+    .row
+      .large-6.column
+        %p
+          %a{href: "https://github.com/ahmadajmi/markdown-arabic", target: "_blank"} Markdown Arabic
+        %p Easily write markdown in Arabic
+
+      .large-6.column
+        %p
+          %a{href: "https://github.com/ahmadajmi/css-helpers", target: "_blank"} CSS Helper classes
+        %p A small CSS library that provides a set of CSS helper classes
+
+    .row
+      .large-6.column
+        %p
+          %a{href: "https://github.com/ahmadajmi/resume", target: "_blank"} Resume
+        %p HTML and CSS template for an online resume
+
+      .large-6.column
+        %p
+          %a{href: "https://github.com/ahmadajmi/rtl-grunt-sass", target: "_blank"} RTL Grunt Sass
+        %p RTL & LTR language direction automation with Grunt and Sass
+
+    .row
+      .large-6.column
+        %p
+          %a{href: "https://github.com/ahmadajmi/grid", target: "_blank"} Simple Grid
+        %p Simple grid system inspired by Foundation
+
+      .large-6.column
+        %p
+          %a{href: "https://github.com/ahmadajmi/ahmadajmi.github.io", target: "_blank"} My Blog
+        %p
+          My blog where I write about technology and experience
+
+  .section
+    .row
+      %header.large-12.column
+        %h3.section-title Articles
+    .row
+      .large-6.column
+        %p
+          %a{href: "http://www.sitepoint.com/using-helper-classes-dry-scale-css/", target: "_blank"} Using Helper Classes to DRY and Scale CSS
+        %p
+          Article on SitePoint that discuss Helper classes which can help remove repetition by creating a set of abstract classes that can be used over and over on HTML elements.
+      .large-6.column
+        %p
+          %a{href: "http://www.sitepoint.com/manage-rtl-css-sass-grunt/", target: "_blank"} Manage RTL CSS with Sass and Grunt
+        %p
+          Using the power of Sass and Grunt to make CSS for multi-lingual sites with left-to-right and right-to-left languages.
+
+  .section
+    .row
+      %header.large-12.column
+        %h3.section-title Talks
+    .row
+      .large-12.column
+        %p
+          %a{href: "https://speakerdeck.com/ahmadajmi/getting-involved-in-technology-community", target: "_blank"} Getting Involved in Technology Community
+        %p
+          A talk about how to get involved in the technology community in different ways like blogging, doing side projects, contributing to Github and StackOverflow, attending conferences.
+
+        %p You can watch the
+          %a{href: "https://www.youtube.com/watch?v=lOYDUu4yqxA", target: "_blank"}
+            &nbsp; video &nbsp;
+          and read the
+          %a{href: "http://oktob.io/posts/341", target: "_blank"}
+            &nbsp; blog post &nbsp;
+          about the topic (Arabic).
+
+  %footer.gray-bg.section
+    .row
+      .large-4.column.text-center
+        %p Cairo - Egypt
+      .large-4.column.text-center
+        %p
+          %a{href: "mailto:ahmad@ahmadajmi.com"} ahmad@ahmadajmi.com
+      .large-4.column.text-center
+        %p
+          +20 10 9690 7347
+
+      .large-12.column
+        .row
+          .large-3.small-6.column.text-center
+            %a.social-link.social-link-stackoverflow{href: "http://stackoverflow.com/users/558777/ahmad-ajmi", target: "_blank", title: "Stackoverflow"}
+              Stack Overflow
+          .large-3.small-6.column.text-center
+            %a.social-link.social-link-github{href: "https://github.com/ahmadajmi", target: "_blank"}
+              Github
+          .large-3.small-6.column.text-center
+            %a.social-link.social-link-linkedin{href: "http://www.linkedin.com/in/ahmadajmi", target: "_blank"}
+              Linkedin
+          .large-3.small-6.column.text-center
+            %a.social-link.social-link-twitter{href: "https://twitter.com/AhmadAjmi", target: "_blank"}
+              Twitter
+%body
+%html

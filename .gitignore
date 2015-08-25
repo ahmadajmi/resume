@@ -1,3 +1,5 @@
 .git
+npm-debug.log
 .sass-cache
+build
 node_modules
